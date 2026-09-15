@@ -331,7 +331,7 @@ def get_loading_message(text):
 # Streamlit Cloud에서는 앱 설정 > Secrets 에 아래처럼 등록하세요:
 # GROQ_API_KEY = "gsk_..."
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-MODEL_NAME = "gemma2-9b-it"
+MODEL_NAME = "openai/gpt-oss-20b"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
